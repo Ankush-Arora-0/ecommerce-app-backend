@@ -6,7 +6,7 @@ import PaymentRouter from './router/Paymentroute.js';
 import BodyParser from 'body-parser';
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 app.use(router);
 app.use(BodyParser.json());
